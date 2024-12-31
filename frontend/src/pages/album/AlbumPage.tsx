@@ -158,7 +158,7 @@ const AlbumPage = () => {
                                                 )}
                                                 {isCurrentSong && !isPlaying ? (
                                                     <div className="hidden group-hover:block">
-                                                        <Music className="size-4 text-blue-600 animate-ping"/>
+                                                        <Music className="size-4 text-blue-600"/>
                                                     </div>
                                                 ) : (
                                                     <div></div>
@@ -167,7 +167,7 @@ const AlbumPage = () => {
 
                                             <div className="flex items-center gap-3">
                                                 <img src={song.imageUrl} alt={song.title}
-                                                    className="size-10" />
+                                                    className="size-10 rounded-lg" />
 
                                                 <div>
                                                     <div className={`font-medium text-white`}>{song.title}</div>
